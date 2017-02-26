@@ -4,8 +4,16 @@ package E01;
  * Created by Seanol on 2017/2/26.
  */
 class Outer {
-    class Inner {
-        { System.out.println("Inner created"); }
+    private String name;
+
+    Outer(){
+        name = "zhangsan";
     }
-    Inner getInner() { return new Inner(); }
+
+    class Inner {
+        public String toString(){
+            return name;
+        }
+    }
+    Inner Inner() { return new Inner(); }
 }

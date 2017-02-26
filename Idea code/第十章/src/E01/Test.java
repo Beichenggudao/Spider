@@ -6,6 +6,7 @@ package E01;
 public class Test {
     public static void main(String[] args) {
         Outer o = new Outer();
-        Outer.Inner i = o.getInner();
+        Outer.Inner i = o.Inner();
+        System.out.println(i.toString());
     }
 }
